@@ -18,4 +18,7 @@ check by: `npm run test`
 I testing not mockup response because this is external API. If something will change test can fast help what is change and where is problem.
 In normal service (in our backend api) i mockup response.
 
+## Automation testing
+For automation testing I rly dont have time this time. On F2F call i can show you how I write testing in the current project (Cypress)
+
 
