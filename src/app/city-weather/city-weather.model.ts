@@ -1,7 +1,7 @@
 export enum WeatherType {
-  Clouds,
-  Snow,
-  Sun
+  Clouds = 'Clouds',
+  Snow = 'Snow',
+  Sun = 'Sun'
 }
 
 export interface CityWeatherDetails {
