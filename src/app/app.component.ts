@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'weather-app';
+
+  citiesName = ['London', 'Prague', 'Bielsko-Biala', 'Warsaw', 'Berlin'];
 }

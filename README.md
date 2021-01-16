@@ -1,27 +1,21 @@
-# WeatherApp
+## UI
+Css inspired by: https://dribbble.com/shots/1999409-Weather-widgets
+Responsive: manually
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+## External Libraries
+None
 
-## Development server
+## Show details on click (weather by hours)
+None - Right now this working in payed api. If will be for free (in past was for free) then I will write this function in service.
+`
+getDetailsByCoord(lat: number, lon: number): Observable<CityWeather> {
+    return this.http.get<CityWeather>(`${environment.apiUrl}oneCall?lat=${lat}&lon=${lon}&exclude=hourly&appId=${environment.apiKey}`);
+}
+`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Tests:
+check by: `npm run test`
+I testing not mockup response because this is external API. If something will change test can fast help what is change and where is problem.
+In normal service (in our backend api) i mockup response.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

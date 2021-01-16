@@ -1,0 +1,7 @@
+<div class="weather-card" *ngIf="weather$ | async as w">
+  <div class="weather-icon" [ngClass]="getWeatherName(w.weather[0].main)"></div>
+  <h2>Wind {{w.wind?.speed}} m/sec</h2>
+  <h1>{{w.main?.temp}}ºC</h1>
+  <p>{{cityName}}</p>
+</div>
+
