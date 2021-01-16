@@ -7,11 +7,11 @@ None
 
 ## Show details on click (weather by hours)
 None - Right now this working in payed api. If will be for free (in past was for free) then I will write this function in service.
-`
+```
 getDetailsByCoord(lat: number, lon: number): Observable<CityWeather> {
     return this.http.get<CityWeather>(`${environment.apiUrl}oneCall?lat=${lat}&lon=${lon}&exclude=hourly&appId=${environment.apiKey}`);
 }
-`
+```
 
 ## Tests:
 check by: `npm run test`
